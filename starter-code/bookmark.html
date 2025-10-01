@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmark Landing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <img src="images/logo-bookmark.svg" alt="Bookmark logo" class="logo">
+    <img src="images/icon-hamburger.svg" alt="Menu" class="menu-icon">
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <img src="images/illustration-hero.svg" alt="Bookmark illustration" class="hero-img">
+    <h1>A Simple Bookmark Manager</h1>
+    <p>A clean and simple interface to organize your favourite websites. 
+       Open a new browser tab and see your sites load instantly. Try it for free.</p>
+    <div class="buttons">
+      <a href="#" class="btn primary">Get it on Chrome</a>
+      <a href="#" class="btn secondary">Get it on Firefox</a>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <h2>Features</h2>
+    <p>Our aim is to make it quick and easy for you to access your favourite websites. 
+       Your bookmarks sync between your devices so you can access them on the go.</p>
+
+    <div class="features-tabs">
+      <button class="tab active" data-target="bookmarking">Simple Bookmarking</button>
+      <button class="tab" data-target="searching">Speedy Searching</button>
+      <button class="tab" data-target="sharing">Easy Sharing</button>
+    </div>
+
+    <div class="features-content">
+      <!-- Bookmarking -->
+      <div class="content active" id="bookmarking">
+        <img src="images/illustration-features-tab-1.svg" alt="Bookmarking">
+        <div>
+          <h3>Bookmark in one click</h3>
+          <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
+             gives you complete control over how you manage your favourite sites.</p>
+        </div>
+      </div>
+      <!-- Searching -->
+      <div class="content" id="searching">
+        <img src="images/illustration-features-tab-2.svg" alt="Searching">
+        <div>
+          <h3>Intelligent search</h3>
+          <p>Our powerful search feature will help you find saved sites in no time at all. 
+             No need to trawl through all of your bookmarks.</p>
+        </div>
+      </div>
+      <!-- Sharing -->
+      <div class="content" id="sharing">
+        <img src="images/illustration-features-tab-3.svg" alt="Sharing">
+        <div>
+          <h3>Share your bookmarks</h3>
+          <p>Easily share your bookmarks and collections with others. Create a 
+             shareable link that you can send at the click of a button.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXTENSIONS -->
+  <section class="extensions">
+    <h2>Download the extension</h2>
+    <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a 
+       favourite you’d like us to prioritize.</p>
+
+    <div class="cards">
+      <div class="card">
+        <img src="images/logo-chrome.svg" alt="Chrome">
+        <h3>Add to Chrome</h3>
+        <p>Minimum version 62</p>
+        <a href="#" class="btn primary">Add & Install Extension</a>
+      </div>
+
+      <div class="card">
+        <img src="images/logo-firefox.svg" alt="Firefox">
+        <h3>Add to Firefox</h3>
+        <p>Minimum version 55</p>
+        <a href="#" class="btn primary">Add & Install Extension</a>
+      </div>
+
+      <div class="card">
+        <img src="images/logo-opera.svg" alt="Opera">
+        <h3>Add to Opera</h3>
+        <p>Minimum version 46</p>
+        <a href="#" class="btn primary">Add & Install Extension</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+  <h2>Frequently Asked Questions</h2>
+  <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What is Bookmark?
+        <img src="images/icon-arrow.svg" alt="arrow" class="arrow">
+      </button>
+      <div class="faq-answer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How can I request a new browser?
+        <img src="images/icon-arrow.svg" alt="arrow" class="arrow">
+      </button>
+      <div class="faq-answer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Is there a mobile app?
+        <img src="images/icon-arrow.svg" alt="arrow" class="arrow">
+      </button>
+      <div class="faq-answer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What about other Chromium browsers?
+        <img src="images/icon-arrow.svg" alt="arrow" class="arrow">
+      </button>
+      <div class="faq-answer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+      </div>
+    </div>
+  </div>
+
+  <a href="#" class="btn primary">More Info</a>
+</section>
+
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <p>35,000+ already joined</p>
+    <h2>Stay up-to-date with what we’re doing</h2>
+    <form>
+      <input type="email" placeholder="Enter your email address">
+      <button type="submit" class="btn danger">Contact Us</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <img src="images/logo-bookmark.svg" alt="Bookmark logo">
+    <nav>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="social">
+      <a href="#"><img src="images/icon-facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="images/icon-twitter.svg" alt="Twitter"></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
