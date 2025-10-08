@@ -164,8 +164,10 @@
   <section class="newsletter">
     <p>35,000+ ALREADY JOINED</p>
     <h2>Stay up-to-date with what we’re doing</h2>
-    <form>
-      <input type="email" placeholder="Enter your email address">
+    <form novalidate>
+      <div class="input-wrapper">
+        <input type="email" placeholder="Enter your email address">
+      </div>
       <button type="submit" class="btn danger">Contact Us</button>
     </form>
   </section>
@@ -183,6 +185,26 @@
       <a href="#"><img src="images/icon-twitter.svg" alt="Twitter"></a>
     </div>
   </footer>
+
+  <!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-content">
+    <div class="mobile-nav-header">
+      <img src="images/nav-logo-bookmark.svg" alt="Bookmark logo" class="mobile-logo">
+      <img src="images/icon-close.svg" alt="Close" class="close-icon" id="closeNav">
+    </div>
+    <nav>
+      <a href="#">FEATURES</a>
+      <a href="#">PRICING</a>
+      <a href="#">CONTACT</a>
+      <a href="#" class="btn danger">LOGIN</a>
+    </nav>
+    <div class="mobile-social">
+      <a href="#"><img src="images/icon-facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="images/icon-twitter.svg" alt="Twitter"></a>
+    </div>
+  </div>
+</div>
 
   <script src="script.js"></script>
 </body>
