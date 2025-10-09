@@ -1,0 +1,55 @@
+/* Features */
+.features {
+  padding: 4rem 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features h2,
+.features p {
+  max-width: 500px;
+}
+
+.features-tabs {
+  border-bottom: 1px solid #777;
+  margin-bottom: 4rem;
+}
+
+.tab.active::after {
+  bottom: -1px;
+}
+
+.features-content .content.active {
+  align-items: center;
+  gap: 5rem;
+}
+
+.features-content .content img {
+  width: 50%;
+}
+
+.features-content .desktop-content {
+  width: 50%;
+  padding: 0;
+}
+
+.features-content .content div p {
+  text-align: left;
+  padding: 0;
+}
+
+.features-content .content div a {
+  margin: 2rem 0 0 0;
+  align-self: flex-start;
+}
+
+/* Fons Esquerre (Features) - Adaptació Desktop */
+.left {
+  top: 55%;
+  left: 0;
+  transform: translateX(-30%);
+  width: 50vw;
+  height: 35vw;
+  max-width: 900px;
+  max-height: 500px;
+}

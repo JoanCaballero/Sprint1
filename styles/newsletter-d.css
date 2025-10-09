@@ -1,0 +1,14 @@
+/* Newsletter */
+.newsletter {
+  padding: 4rem 5rem;
+}
+
+.newsletter h2 {
+  font-size: 2.2rem;
+  margin: 0 auto 2rem auto;
+  max-width: 380px;
+}
+
+.newsletter form {
+  max-width: 440px;
+}

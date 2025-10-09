@@ -1,0 +1,56 @@
+/* Hero */
+.hero {
+  padding: 2rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  margin: 0 auto 2rem auto;
+}
+
+.hero h1 {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
+.hero p {
+  color: #777;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Fons Decoratius (Fons Blau General) */
+.background-blue {
+  position: absolute;
+  z-index: -1;
+  background-color: #5368df;
+}
+
+/* Fons Dret (Hero) - Mòbil */
+.right {
+  top: 15%;
+  right: 0;
+  transform: translate(2vw);
+  border-radius: 20% 0 0 20% / 50% 0 0 50%;
+  width: 90vw;
+  height: 50vw;
+}
+
+/* Fons Esquerre (Features) - Mòbil */
+.left {
+  top: 52%;
+  left: 0;
+  border-radius: 0 20% 20% 0 / 0 50% 50% 0;
+  width: 90vw;
+  height: 55vw;
+  position: absolute;
+}

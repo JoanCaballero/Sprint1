@@ -1,0 +1,11 @@
+@import url("styles/reset.css");   /* Crear aquest fitxer per al reset i body */
+@import url("styles/buttons.css");
+
+/* 2. Layouts (Mobile First) */
+@import url("styles/header.css");
+@import url("styles/hero.css");
+@import url("styles/features.css");
+@import url("styles/extensions.css");
+@import url("styles/faq.css");
+@import url("styles/newsletter.css");
+@import url("styles/footer.css");

@@ -1,0 +1,39 @@
+/* Extensions */
+.extensions {
+  padding: 4rem 5rem;
+}
+
+.cards {
+  margin-top: 5rem;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1000px;
+}
+
+.card {
+  margin-top: 0;
+  width: 300px;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards .card:nth-child(2) {
+  margin-top: 3rem;
+}
+
+.cards .card:nth-child(3) {
+  margin-top: 6rem;
+}
+
+.card img[alt="logo-chrome"],
+.card img[alt="logo-firefox"],
+.card img[alt="logo-opera"] {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.card a {
+  margin-top: auto;
+}

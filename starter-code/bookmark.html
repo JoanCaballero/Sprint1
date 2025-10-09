@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bookmark Landing</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="desktop.css" media="(min-width: 768px)">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -13,21 +14,30 @@
   <!-- HEADER -->
   <header class="header">
     <img src="images/logo-bookmark.svg" alt="Bookmark logo" class="logo">
+    <nav class="desktop-nav">
+      <a href="#">FEATURES</a>
+      <a href="#">PRICING</a>
+      <a href="#">CONTACT</a>
+      <a href="#" class="btn danger">LOGIN</a>
+    </nav>
     <img src="images/icon-hamburger.svg" alt="Menu" class="menu-icon">
   </header>
 
   <!-- HERO -->
   <section class="hero">
-    
-    <img src="images/illustration-hero.svg" alt="Bookmark illustration" class="hero-img">
     <div class="background-blue"></div>
     <div class="background-blue right"></div>
-    <h1>A Simple Bookmark Manager</h1>
-    <p>A clean and simple interface to organize your favourite websites. 
-       Open a new browser tab and see your sites load instantly. Try it for free.</p>
-    <div class="buttons">
-      <a href="#" class="btn primary">Get it on Chrome</a>
-      <a href="#" class="btn secondary">Get it on Firefox</a>
+    <div class="hero-content-wrapper"> 
+      <img src="images/illustration-hero.svg" alt="Bookmark illustration" class="hero-img">
+      
+      <div class="desktop-content"> <h1>A Simple Bookmark Manager</h1>
+        <p>A clean and simple interface to organize your favourite websites. 
+           Open a new browser tab and see your sites load instantly. Try it for free.</p>
+        <div class="buttons">
+          <a href="#" class="btn primary">Get it on Chrome</a>
+          <a href="#" class="btn secondary">Get it on Firefox</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -48,28 +58,31 @@
       <!-- Bookmarking -->
       <div class="content active" id="bookmarking">
         <img src="images/illustration-features-tab-1.svg" alt="Bookmarking">
-        <div>
+        <div class="desktop-content">
           <h3>Bookmark in one click</h3>
           <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
              gives you complete control over how you manage your favourite sites.</p>
+          <a href="#" class="btn primary">More Info</a>
         </div>
       </div>
       <!-- Searching -->
       <div class="content" id="searching">
         <img src="images/illustration-features-tab-2.svg" alt="Searching">
-        <div>
+        <div class="desktop-content">
           <h3>Intelligent search</h3>
           <p>Our powerful search feature will help you find saved sites in no time at all. 
              No need to trawl through all of your bookmarks.</p>
+          <a href="#" class="btn primary">More Info</a>
         </div>
       </div>
       <!-- Sharing -->
       <div class="content" id="sharing">
         <img src="images/illustration-features-tab-3.svg" alt="Sharing">
-        <div>
+        <div class="desktop-content">
           <h3>Share your bookmarks</h3>
           <p>Easily share your bookmarks and collections with others. Create a 
              shareable link that you can send at the click of a button.</p>
+          <a href="#" class="btn primary">More Info</a>
         </div>
       </div>
     </div>

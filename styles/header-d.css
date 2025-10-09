@@ -1,0 +1,38 @@
+/* Desktop Navigation (Oculta per defecte) */
+.desktop-nav {
+  display: none;
+}
+
+.desktop-nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  margin-left: 2.2rem;
+  transition: color 0.2s;
+}
+
+.desktop-nav a:hover {
+  color: #fa5757;
+}
+
+.desktop-nav .btn.primary:hover {
+  color: white;
+  background-color: #fa5757;
+}
+
+/* Header */
+.header {
+  padding: 2.5rem 5rem 0.5rem 5rem;
+  position: relative;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
