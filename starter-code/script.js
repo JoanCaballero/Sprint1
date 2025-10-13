@@ -1,4 +1,5 @@
 const tabs = document.querySelectorAll(".tab");
+const featuresSection = document.querySelector(".features");
 const contents = document.querySelectorAll(".content");
 const faqItems = document.querySelectorAll(".faq-item");
 
@@ -10,7 +11,11 @@ tabs.forEach(tab => {
 
     // afegir actiu
     tab.classList.add("active");
-    document.getElementById(tab.dataset.target).classList.add("active");
+    const targetId = tab.dataset.target;
+    document.getElementById(targetId).classList.add("active");
+
+    featuresSection.classList.remove("tab-bookmarking", "tab-searching", "tab-sharing");
+    featuresSection.classList.add(`tab-${targetId}`);
   });
 });
 

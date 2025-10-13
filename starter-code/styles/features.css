@@ -77,11 +77,39 @@
   margin-top: 4rem;
 }
 
+
 .features-content #searching.active > div,
 .features-content #sharing.active > div {
   margin-top: -1.5rem;
 }
 
-.features-content #bookmarking.active h3 {
+.features-content #bookmarking.active h2 {
+  margin-top: 5rem;
+}
+
+.features-content #sharing.active h2 {
   margin-top: 3rem;
 }
+
+.features-content #searching.active h2 {
+  margin-top: 3rem;
+}
+
+/* Fons Esquerre (Features) - Mòbil */
+.left {
+  top: 51%;
+  left: 0;
+  border-radius: 0 20% 20% 0 / 0 50% 50% 0;
+  width: 90vw;
+  height: 45vw;
+  position: absolute;
+}
+
+.features.tab-searching .left{
+  top:52%;
+}
+
+.features.tab-sharing .left{
+  top:54%;
+}
+

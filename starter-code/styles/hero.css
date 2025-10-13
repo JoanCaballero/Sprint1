@@ -44,13 +44,3 @@
   width: 90vw;
   height: 50vw;
 }
-
-/* Fons Esquerre (Features) - Mòbil */
-.left {
-  top: 52%;
-  left: 0;
-  border-radius: 0 20% 20% 0 / 0 50% 50% 0;
-  width: 90vw;
-  height: 55vw;
-  position: absolute;
-}
