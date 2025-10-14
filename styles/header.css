@@ -1,16 +1,4 @@
-/* Header */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3rem 2.75rem 0.5rem 2.75rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  background: #fff;
-  z-index: 1000;
-}
+
 
 .logo {
   height: 30px;
@@ -156,11 +144,6 @@
     background-color: #fa5757;
   }
 
-  /* Header */
-  .header {
-    padding: 2.5rem 5rem 0.5rem 5rem;
-    position: relative;
-  }
 
   .menu-icon {
     display: none;
