@@ -1,0 +1,138 @@
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2.75rem 0.5rem 2.75rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: #fff;
+  z-index: 1000;
+}
+
+.logo {
+  height: 30px;
+  margin-left: 0.1rem;
+}
+
+.menu-icon {
+  width: auto;
+  height: 22px;
+  cursor: pointer;
+  margin-right: 0.1rem;
+}
+
+.logo.hide,
+.menu-icon.hide {
+  display: none;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(37, 43, 70, 0.95);
+  z-index: 2000;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.mobile-nav.active {
+  display: flex;
+}
+
+.mobile-nav-header {
+  width: 100%;
+  display: flex;
+  padding: 2rem 2rem 0.5rem 1.85rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.mobile-logo {
+  height: 29px;
+  width: auto;
+  display: block;
+}
+
+.close-icon {
+  width: auto;
+  height: 25px;
+  cursor: pointer;
+}
+
+.mobile-nav-content {
+  width: 100vw;
+  height: 100vh;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.2rem 0.85rem 0 0.85rem;
+  gap: 2.5rem;
+}
+
+.mobile-nav nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.mobile-nav nav a {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 100;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  padding: 1.5rem 0;
+  width: 85%;
+  text-align: center;
+  border-bottom: 1px solid #444;
+}
+
+.mobile-nav nav a:hover {
+  color: #fa5757;
+}
+
+.mobile-nav nav a:first-child {
+  border-top: 1px solid #444;
+}
+
+.mobile-nav nav a.btn {
+  background: none;
+  border: 2px solid #fff;
+  font-weight: 400;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  width: 80%;
+}
+
+.mobile-social {
+  display: flex;
+  gap: 4rem;
+  margin-top: auto;
+  margin-bottom: 5rem;
+  align-self: center;
+  align-items: flex-end;
+}
+
+.mobile-social img {
+  width: 2rem;
+  height: auto;
+}
+
+.mobile-social img:hover {
+  filter: brightness(0) saturate(100%) invert(46%) sepia(89%) saturate(2396%) hue-rotate(333deg) brightness(99%) contrast(97%);
+}
+
+.desktop-nav {
+  display: none;
+}

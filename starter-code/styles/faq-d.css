@@ -1,0 +1,9 @@
+/* FAQ */
+.faq {
+  padding: 4rem 5rem 6rem 5rem;
+}
+
+.faq-item {
+  margin: 0 auto;
+  max-width: 500px;
+}
