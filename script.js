@@ -27,24 +27,24 @@ faqItems.forEach(item => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  const menuIcon = document.querySelector('.menu-icon');
-  const mobileNav = document.getElementById('mobileNav');
-  const closeNav = document.getElementById('closeNav');
-  const logo = document.querySelector('.logo');
+  const menuOpenIcon = document.getElementById('menu-open-icon');
+  const mobileNavMenu = document.getElementById('mobile-nav-menu');
+  const menuCloseIcon = document.getElementById('menu-close-icon');
 
-  menuIcon.addEventListener('click', function() {
-    mobileNav.classList.add('active');
-    menuIcon.classList.add('hide');
-    logo.classList.add('hide'); 
-    document.body.style.overflow = 'hidden';
-  });
-
-  closeNav.addEventListener('click', function() {
-    mobileNav.classList.remove('active');
-    menuIcon.classList.remove('hide');
-    logo.classList.remove('hide');
-    document.body.style.overflow = '';
-  });
+  if (menuOpenIcon && mobileNavMenu) {
+    menuOpenIcon.addEventListener('click', function() {
+      mobileNavMenu.classList.remove('hidden');
+      mobileNavMenu.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    });
+  }
+  if (menuCloseIcon && mobileNavMenu) {
+    menuCloseIcon.addEventListener('click', function() {
+      mobileNavMenu.classList.remove('flex');
+      mobileNavMenu.classList.add('hidden');
+      document.body.style.overflow = '';
+    });
+  }
 });
 
 // Newsletter form validation

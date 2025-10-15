@@ -1,11 +1,11 @@
-/* Reset */
-* {
+/* Reset 
+ {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base Body Estils Mòbil */
+Base Body Estils Mòbil 
 body {
   font-family: Rubik, Arial, Helvetica, sans-serif;
   color: #333;
@@ -16,4 +16,5 @@ body {
   padding: 0 auto;
   line-height: 1.5rem;
   padding-top: 64px;
-}
+} 
+*/

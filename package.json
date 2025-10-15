@@ -8,11 +8,12 @@
   "version": "1.0.0",
   "description": "Instrucciones en [briefing](/starter-code/briefing.md)",
   "main": "index.js",
+  "devDependencies": {},
   "scripts": {
     "build": "vite build",
     "preview": "vite preview",
     "dev": "vite",
-    "build:css": "tailwindcss -i ./styles.css -o ./dist/output.css --watch"
+    "output": "npx tailwindcss -i src/main.css -o output.css --watch"
   },
   "repository": {
     "type": "git",

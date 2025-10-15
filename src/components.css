@@ -1,0 +1,74 @@
+@layer components {
+    .background-blue {
+        @apply absolute bg-[#5368df];
+        z-index: -1; 
+    }
+
+    .background-blue.right {
+        top: 15%;
+        right: 0;
+        transform: translate(2vw);
+        border-radius: 20% 0 0 20% / 50% 0 0 50%;
+        width: 90vw;
+        height: 50vw;
+
+        @media (min-width: 768px) {
+            top: 25%;
+            right: 0;
+            transform: translateX(40%);
+            width: 60%;
+            height: 60%;
+            max-width: 900px;
+            max-height: 600px;
+        }
+    }
+
+    .btn {
+        @apply inline-block no-underline rounded text-[0.9rem] font-normal transition-shadow duration-200;
+        
+        padding: 0.8rem 1.5rem; 
+        border: 2px solid transparent;
+
+        box-shadow: 0 4px 16px rgba(83, 104, 223, 0.15);
+        
+        transition-property: box-shadow; 
+    }
+
+    .btn.primary {
+        @apply text-white;
+        background: var(--color-brand-blue); 
+        box-shadow: 0 8px 8px rgba(83, 104, 223, 0.22);
+    }
+
+    .btn.primary:hover {
+        background-color: white;
+        color: var(--color-brand-blue);
+        border-color: var(--color-brand-blue);
+        box-shadow: none; 
+    }
+
+    .btn.secondary {
+        color: var(--color-text-dark);
+        background: var(--color-bg-light); 
+        box-shadow: 0 6px 24px rgba(83, 104, 223, 0.224);
+    }
+
+    .btn.secondary:hover {
+        background-color: white;
+        border-color: var(--color-text-dark);
+        box-shadow: none;
+    }
+
+    
+    .btn.danger {
+        @apply text-white;
+        background: var(--color-brand-red);
+
+    }
+
+    .btn.danger:hover {
+        background-color: white;
+        color: var(--color-brand-red);
+        border-color: var(--color-brand-red);
+    }
+}
