@@ -5,7 +5,7 @@
     }
 
     .background-blue.right {
-        top: 15%;
+        top: 20%;
         right: 0;
         transform: translate(2vw);
         border-radius: 20% 0 0 20% / 50% 0 0 50%;
@@ -24,51 +24,34 @@
     }
 
     .btn {
-        @apply inline-block no-underline rounded text-[0.9rem] font-normal transition-shadow duration-200;
-        
-        padding: 0.8rem 1.5rem; 
-        border: 2px solid transparent;
-
+        @apply inline-block px-6 py-[0.8rem] rounded-[5px] text-[0.9rem] no-underline
+         border-2 border-transparent transition-shadow duration-200;
         box-shadow: 0 4px 16px rgba(83, 104, 223, 0.15);
-        
-        transition-property: box-shadow; 
     }
 
     .btn.primary {
-        @apply text-white;
-        background: var(--color-brand-blue); 
+        @apply bg-[#5368df] text-white;
         box-shadow: 0 8px 8px rgba(83, 104, 223, 0.22);
     }
 
     .btn.primary:hover {
-        background-color: white;
-        color: var(--color-brand-blue);
-        border-color: var(--color-brand-blue);
-        box-shadow: none; 
+        @apply border-[#5368df] bg-white text-[#5368df];
     }
 
     .btn.secondary {
-        color: var(--color-text-dark);
-        background: var(--color-bg-light); 
+        @apply bg-[#eeecece3] text-[#333];
         box-shadow: 0 6px 24px rgba(83, 104, 223, 0.224);
     }
 
     .btn.secondary:hover {
-        background-color: white;
-        border-color: var(--color-text-dark);
-        box-shadow: none;
+        @apply border-[#333] bg-white;
     }
 
-    
     .btn.danger {
-        @apply text-white;
-        background: var(--color-brand-red);
-
+        @apply bg-[#fa5757] text-white;
     }
 
     .btn.danger:hover {
-        background-color: white;
-        color: var(--color-brand-red);
-        border-color: var(--color-brand-red);
+        @apply border-[#fa5757] bg-white text-[#fa5757];
     }
 }
