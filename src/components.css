@@ -5,7 +5,7 @@
     }
 
     .background-blue.right {
-        top: 20%;
+        top: 30%;
         right: 0;
         transform: translate(2vw);
         border-radius: 20% 0 0 20% / 50% 0 0 50%;
@@ -13,14 +13,41 @@
         height: 50vw;
 
         @media (min-width: 768px) {
-            top: 25%;
+            top: 32%;   
             right: 0;
             transform: translateX(40%);
-            width: 60%;
-            height: 60%;
-            max-width: 900px;
+            width: 60vw;
+            height: 25vw;
+            max-width: 1200px;
             max-height: 600px;
         }
+    }
+
+    .background-blue.left {
+        top: 50%;
+        left: 0;
+        transform: translate(-2vw);
+        border-radius: 0 20% 20% 0/ 0 50% 50% 0;
+        width: 80vw;
+        height: 45vw;
+
+        @media (min-width: 768px) {
+            top: 60%;
+            left: 0;
+            transform: translateX(-40%);
+            width: 80%;
+            height: 55%;
+            max-width: 1200px;
+            max-height: 600px;
+        }
+    }
+
+    .background-blue.left.searching {
+        top:53%;
+    }
+
+    .background-blue.left.sharing {
+        top:55%;
     }
 
     .btn {
@@ -53,5 +80,29 @@
 
     .btn.danger:hover {
         @apply border-[#fa5757] bg-white text-[#fa5757];
+    }
+
+    .extension-card {
+        @apply bg-white rounded-xl shadow-lg max-w-[250px] p-6 flex flex-col items-center;
+    }
+
+    .extension-card-logo {
+        @apply w-[20vw] max-w-[100px] h-auto my-4 mx-auto;
+    }
+
+    .extension-card-title {
+        @apply text-lg font-semibold text-center mt-4;
+    }
+
+    .extension-card-version {
+        @apply text-gray-500 text-sm mt-2 mb-6;
+    }
+
+    .extension-card-dots {
+        @apply w-[calc(100%+3rem)] -mx-6 mb-4 object-contain;
+    }
+
+    .extension-card-link {
+        @apply bg-[#5267df] text-white text-sm font-medium px-6 py-3 rounded-md shadow-md hover:bg-[#6a7eff] transition;
     }
 }
