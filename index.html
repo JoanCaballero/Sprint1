@@ -22,7 +22,7 @@
         <a href="#" class="text-[#333] no-underline text-[0.9rem] tracking-[0.05rem] ml-[2.2rem] transition-colors duration-200 hover:text-[#fa5757] uppercase">FEATURES</a>
         <a href="#" class="text-[#333] no-underline text-[0.9rem] tracking-[0.05rem] ml-[2.2rem] transition-colors duration-200 hover:text-[#fa5757] uppercase">PRICING</a>
         <a href="#" class="text-[#333] no-underline text-[0.9rem] tracking-[0.05rem] ml-[2.2rem] transition-colors duration-200 hover:text-[#fa5757] uppercase">CONTACT</a>
-        <a href="#" class="btn danger bg-[#fa5757] text-white py-2 px-6 rounded ml-[2.2rem] shadow-md transition-colors duration-200 hover:text-white hover:bg-[#fa5757] border-2 border-transparent">LOGIN</a>
+        <a href="#" class="btn danger py-2 px-6 rounded ml-[2.2rem] shadow-md transition-colors duration-200">LOGIN</a>
     </nav>
     
     <img src="images/icon-hamburger.svg" alt="Menu" id="menu-open-icon" class="w-auto h-[22px] cursor-pointer mr-[0.1rem] md:hidden menu-icon">
@@ -122,8 +122,8 @@
       </div>
 
       <!-- Searching -->
-      <div class="content flex flex-col md:flex-row items-center gap-8 md:gap-20 hidden" id="searching">
-        <img src="images/illustration-features-tab-2.svg" alt="Searching" class="w-[80vw] md:w-1/2 object-contain transform translate-y-2">
+      <div class="content flex flex-col md:flex-row items-center gap-8 md:gap-16 md:pl-[15vw] md:pr-[8vw] hidden" id="searching">
+        <img src="images/illustration-features-tab-2.svg" alt="Searching" class="w-[80vw] md:w-[45vw] object-contain transform translate-y-2">
         <div class="desktop-content w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
           <div class="background-blue left searching"></div>
           <h2 class="text-2xl font-bold text-[#242a45] mb-4 mt-6 md:mt-0">Intelligent search</h2>
@@ -138,8 +138,8 @@
       </div>
 
       <!-- Sharing -->
-      <div class="content flex flex-col md:flex-row items-center gap-8 md:gap-24 hidden" id="sharing">
-        <img src="images/illustration-features-tab-3.svg" alt="Sharing" class="w-[80vw] md:w-1/2 object-contain transform translate-y-2">
+      <div class="content flex flex-col md:flex-row items-center gap-8 md:gap-16 md:pl-[15vw] md:pr-[8vw] hidden" id="sharing">
+        <img src="images/illustration-features-tab-3.svg" alt="Sharing" class="w-[80vw] md:w-[45vw] object-contain transform translate-y-2">
         <div class="desktop-content w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
           <div class="background-blue left sharing"></div>
           <h2 class="text-2xl font-bold text-[#242a45] mb-4 mt-6 md:mt-0">Share your bookmarks</h2>
@@ -158,42 +158,40 @@
 
 
   <!-- EXTENSIONS -->
-  <section class="extensions">
-    <h2>Download the extension</h2>
-    <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a 
-       favourite you’d like us to prioritize.</p>
-
-    <div class="cards">
+  <section class="extensions p-8 text-center">
+    <h2 class="text-3xl font-bold mb-4">Download the extension</h2>
+    <p class="text-gray-500 max-w-xl mx-auto mb-10">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+    <div class="cards flex flex-col md:flex-row justify-center items-center gap-8">
       <div class="extension-card">
-        <img src="images/logo-chrome.svg" alt="logo-chrome" class="extension-card-logo" />
-        <h3 class="extension-card-title">Add to Chrome</h3>
-        <p class="extension-card-version">Minimum version 62</p>
-        <img src="images/bg-dots.svg" alt="bg-dots" class="extension-card-dots" />
-        <a href="#" class="extension-card-link">Add & Install Extension</a>
+          <img src="images/logo-chrome.svg" alt="logo-chrome" class="w-[20vw] max-w-[100px] h-auto my-4 mx-auto" />
+          <h3 class="text-lg font-semibold text-center mt-4">Add to Chrome</h3>
+          <p class="text-gray-500 text-sm mt-2 mb-6">Minimum version 62</p>
+          <img src="images/bg-dots.svg" alt="bg-dots" class="w-[calc(100%+3rem)] -mx-6 mb-4 object-contain" />
+          <a href="#" class="btn primary">Add & Install Extension</a>
       </div>
 
-      <div class="extension-card">
-        <img src="images/logo-firefox.svg" alt="logo-firefox" class="extension-card-logo" />
-        <h3 class="extension-card-title">Add to Chrome</h3>
-        <p class="extension-card-version">Minimum version 62</p>
-        <img src="images/bg-dots.svg" alt="bg-dots" class="extension-card-dots" />
-        <a href="#" class="extension-card-link">Add & Install Extension</a>
+      <div class="extension-card md:mt-10">
+          <img src="images/logo-firefox.svg" alt="logo-firefox" class="w-[20vw] max-w-[100px] h-auto my-4 mx-auto" />
+          <h3 class="text-lg font-semibold text-center mt-4">Add to Firefox</h3> 
+          <p class="text-gray-500 text-sm mt-2 mb-6">Minimum version 55</p>
+          <img src="images/bg-dots.svg" alt="bg-dots" class="w-[calc(100%+3rem)] -mx-6 mb-4 object-contain" />
+          <a href="#" class="btn primary">Add & Install Extension</a>
       </div>
 
-      <div class="extension-card">
-        <img src="images/logo-opera.svg" alt="logo-opera" class="extension-card-logo" />
-        <h3 class="extension-card-title">Add to Chrome</h3>
-        <p class="extension-card-version">Minimum version 62</p>
-        <img src="images/bg-dots.svg" alt="bg-dots" class="extension-card-dots" />
-        <a href="#" class="extension-card-link">Add & Install Extension</a>
+      <div class="extension-card md:mt-20">
+          <img src="images/logo-opera.svg" alt="logo-opera" class="w-[20vw] max-w-[100px] h-auto my-4 mx-auto" />
+          <h3 class="text-lg font-semibold text-center mt-4">Add to Opera</h3>
+          <p class="text-gray-500 text-sm mt-2 mb-6">Minimum version 46</p>
+          <img src="images/bg-dots.svg" alt="bg-dots" class="w-[calc(100%+3rem)] -mx-6 mb-4 object-contain" />
+          <a href="#" class="btn primary">Add & Install Extension</a>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="faq px-4 max-w-xl mx-auto py-8">
-    <h2 class="text-2xl font-semibold mb-4">Frequently Asked Questions</h2>
-    <p class="text-gray-600 mb-8">
+  <section class="faq px-4 max-w-xl mx-auto py-8 md:py-[15vh] text-center">
+    <h2 class="text-3xl font-bold mb-4 ">Frequently Asked Questions</h2>
+    <p class="text-gray-600 mb-8 ">
       Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.
     </p>
 
@@ -204,7 +202,7 @@
           What is Bookmark?
           <img src="images/icon-arrow.svg" alt="arrow" class="arrow transition-transform duration-300">
         </button>
-        <div class="faq-answer hidden px-4 pb-4 text-gray-700 text-sm">
+        <div class="faq-answer hidden px-4 pb-4 text-gray-700 text-sm text-left">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
         </div>
       </div>
@@ -214,7 +212,7 @@
           How can I request a new browser?
           <img src="images/icon-arrow.svg" alt="arrow" class="arrow transition-transform duration-300">
         </button>
-        <div class="faq-answer hidden px-4 pb-4 text-gray-700 text-sm">
+        <div class="faq-answer hidden px-4 pb-4 text-gray-700 text-sm text-left">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
         </div>
       </div>
@@ -224,7 +222,7 @@
           Is there a mobile app?
           <img src="images/icon-arrow.svg" alt="arrow" class="arrow transition-transform duration-300">
         </button>
-        <div class="faq-answer hidden px-4 pb-4 text-gray-700 text-sm">
+        <div class="faq-answer hidden px-4 pb-4 text-gray-700 text-sm text-left">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
         </div>
       </div>
@@ -240,42 +238,42 @@
       </div>
     </div>
 
-    <a href="#" class="btn primary mt-12 block mx-auto">More Info</a>
+    <a href="#" class="btn primary mt-12  mx-auto inline-block ">More Info</a>
   </section>
 
 
   <!-- NEWSLETTER -->
   <section class="newsletter relative bg-[#5368df] text-white py-8 px-4 letter-spacing-[0.08rem] md:py-16 md:px-20">
-    <p class="text-center tracking-widest mb-4 md:mb-2">35,000+ ALREADY JOINED</p>
-    <h2 class="font-medium mx-4 mb-8 text-center md:text-3xl md:max-w-xl md:mx-auto md:mb-10">
+    <p class="text-center tracking-widest mb-4 md:mb-[5vh]">35,000+ ALREADY JOINED</p>
+    <h2 class="font-medium mx-4 mb-8 text-center md:text-3xl md:mb-10 md:mx-[30vw]">
       Stay up-to-date with what we’re doing
     </h2>
     
-    <form novalidate class="w-10/12 max-w-xl mx-auto flex flex-col gap-4 md:flex-row md:gap-2 md:w-full">
-      <div class="input-wrapper">
+    <form novalidate class="w-10/12 max-w-xl mx-auto flex flex-col gap-4 md:flex-row md:gap-2">
+      <div class="input-wrapper md:flex-grow">
         <input
           type="email"
           placeholder="Enter your email address"
-          class="p-3 rounded-md border-none placeholder-black/30 w-full text-black"
+          class="p-3 rounded-md border-none placeholder-black/30 w-full text-black bg-white"
         />
       </div>
-      <button type="submit" class="btn-danger">
+      <button type="submit" class="btn danger md:py-0">
         Contact Us
       </button>
     </form>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer bg-[#252b46] text-white flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-12 px-4 md:px-20 py-8 max-w-screen-xl mx-auto">
+  <footer class="footer bg-[#252b46] text-white flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-12 px-4 md:px-[15vw] py-8 mx-auto">
     <img src="images/footer-logo-bookmark.svg" alt="Bookmark logo" class="h-4 w-auto" />
     
-    <nav class="flex flex-col md:flex-row gap-2 md:gap-8 font-light text-[0.6rem] md:text-xs mr-auto">
+    <nav class="flex flex-col md:flex-row gap-2 md:gap-8 font-light text-[0.6rem] md:text-xs text-center tracking-widest md:mr-auto">
       <a href="#" class="hover:text-[#fa5757] transition-colors">FEATURES</a>
       <a href="#" class="hover:text-[#fa5757] transition-colors">PRICING</a>
       <a href="#" class="hover:text-[#fa5757] transition-colors">CONTACT</a>
     </nav>
     
-    <div class="social flex gap-8 mt-4 md:mt-0">
+    <div class="social flex gap-8 mt-2 md:mt-0">
       <a href="#" aria-label="Facebook">
         <img src="images/icon-facebook.svg" alt="Facebook" class="h-4 w-auto" />
       </a>
