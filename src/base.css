@@ -1,6 +1,0 @@
-@layer base {
-    body {
-        @apply w-screen m-auto font-rubik leading-(--line-height) text-(--font-size) overflow-x-hidden;
-    }
-    
-} 
