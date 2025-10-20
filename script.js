@@ -97,23 +97,20 @@ newsletterForm.addEventListener('submit', function(e) {
 function showError() {
   inputWrapper.classList.add('error');
  
-  const errorMsg = document.createElement('div');
-  errorMsg.className = 'error-message';
-  errorMsg.textContent = "Whoops, make sure it's an email";
- 
-  emailInput.style.backgroundImage = "url('images/icon-error.svg')";
-  emailInput.style.backgroundRepeat = "no-repeat";
-  emailInput.style.backgroundPosition = "right 1rem center";
-  emailInput.style.backgroundSize = "1.2rem";
-
-  inputWrapper.appendChild(errorMsg);
+  if (!inputWrapper.dataset.errorShown) {
+        const errorMsg = document.createElement('div');
+        errorMsg.className = 'error-message';
+        errorMsg.textContent = "Whoops, make sure it's an email";
+        inputWrapper.appendChild(errorMsg);
+        inputWrapper.dataset.errorShown = 'true'; 
+    }
 }
 
 function removeError() {
   inputWrapper.classList.remove('error');
-  emailInput.style.backgroundImage = "none";
   const existingError = inputWrapper.querySelector('.error-message');
   if (existingError) {
     existingError.remove();
   }
+  delete inputWrapper.dataset.errorShown;
 }

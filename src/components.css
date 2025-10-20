@@ -102,4 +102,25 @@
     .social a:hover {
         filter: brightness(0) saturate(100%) invert(46%) sepia(89%) saturate(2396%) hue-rotate(333deg) brightness(99%) contrast(97%);
     }
+
+    .input-wrapper.error {
+        background-color: #fa5757; 
+        border-radius: 5px; 
+        display: block;
+        border: 2px solid #fa5757;
+    }
+
+    .input-wrapper.error input {
+        background-image: url('./images/icon-error.svg');
+        background-repeat: no-repeat;
+        background-position: right 1rem center;
+        background-size: 1.2rem;
+        padding-right: 3rem;
+    }
+
+    .error-message {
+        color: white;
+        font-size: 0.75rem;
+        padding:0.2rem 0 0 0.5rem; /* Ajustat per a l'espaiat */
+    }
 }
