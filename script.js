@@ -8,14 +8,12 @@ tabs.forEach(tab => {
     tabs.forEach(t => {
       t.classList.remove("active", "text-black", "md:text-black");
       t.classList.add("text-gray-500");
-      // ocultar la línia inferior si la tens
     });
     contents.forEach(c => {
       c.classList.add("hidden");
       c.classList.remove("flex", "active");
     });
 
-    // activant el tab clicat
     tab.classList.add("active", "text-black", "md:text-black");
     tab.classList.remove("text-gray-500");
     const targetId = tab.dataset.target;
@@ -25,7 +23,6 @@ tabs.forEach(tab => {
       targetContent.classList.add("flex", "active");
     }
 
-    // si vols afegir clases al section per estil decoratiu (per exemple aplicacions condicionals)
     featuresSection.classList.remove("tab-bookmarking", "tab-searching", "tab-sharing");
     featuresSection.classList.add(`tab-${targetId}`);
   });
