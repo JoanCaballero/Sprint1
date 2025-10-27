@@ -5,11 +5,9 @@ const faqItems = document.querySelectorAll(".faq-item");
 
 tabs.forEach(tab => {
   tab.addEventListener("click", () => {
-    // treure actius
     tabs.forEach(t => t.classList.remove("active"));
     contents.forEach(c => c.classList.remove("active"));
 
-    // afegir actiu
     tab.classList.add("active");
     const targetId = tab.dataset.target;
     document.getElementById(targetId).classList.add("active");
@@ -58,13 +56,11 @@ newsletterForm.addEventListener('submit', function(e) {
   const email = emailInput.value.trim();
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   
-  // Remove previous error if exists
   removeError();
   
   if (!emailRegex.test(email)) {
     showError();
   } else {
-    // Email is valid, you can submit the form or do something else
     console.log('Email valid:', email);
   }
 });
